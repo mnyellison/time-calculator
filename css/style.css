@@ -1,0 +1,58 @@
+@import url(/css/variables.css);
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geist", sans-serif;
+    background-color: var(--clr-bg-page);
+    padding: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    max-width: 448px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: var(--clr-primary);
+    fill: var(--clr-white);
+    box-shadow: 0 6px 10px rgba(0, 177, 118, 0.2);
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-logo svg {
+    width: 32px;
+}
+
+.hero-title {
+    font-size: var(--fs-xl);
+    color: var(--clr-text-primary);
+    margin-bottom: 8px;
+}
+
+.hero-subtitle {
+    font-size: var(--fs-md);
+    color: var(--clr-text-secondary);
+}

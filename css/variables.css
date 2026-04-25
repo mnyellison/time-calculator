@@ -1,0 +1,16 @@
+:root {
+    --clr-primary: #00bc7d;
+    --clr-danger: #ff0000;
+
+    --clr-white: #ffffff;
+
+    --clr-bg-page: #f6f8fb;
+    --clr-bg-surface: #ffffff;
+    --clr-text-primary: #000000;
+    --clr-text-secondary: #62748e;
+    --clr-border: #e2e8f0;
+
+    --fs-xl: 1.875rem; /* 30px */
+    --fs-md: 1rem;     /* 16px */
+    --fs-sm: 0.875rem; /* 14px */
+}
