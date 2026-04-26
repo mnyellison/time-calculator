@@ -56,3 +56,122 @@ main {
     font-size: var(--fs-md);
     color: var(--clr-text-secondary);
 }
+
+.form-container {
+    width: 100%;
+    background-color: var(--clr-bg-surface);
+    border-radius: 10px;
+    padding: 24px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form {
+    padding: 24px;
+}
+
+.time-group {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.time-group label {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.time-group label svg {
+    width: 16px;
+}
+
+.svg-play {
+    fill: var(--clr-primary);
+}
+
+.svg-stop {
+    fill: var(--clr-danger);
+}
+
+.time-input-wrapper {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.time-input-wrapper input {
+    padding: 10px 14px;
+    width: 100%;
+    font-size: var(--fs-md);
+    border: 1px solid var(--clr-border);
+    border-radius: 10px;
+}
+
+.time-input-wrapper input:focus {
+    border: 1px solid #a1a1a1;
+    outline: 3px solid #cfcfcf;
+}
+
+.time-input-wrapper button {
+    padding: 8px 16px;
+    border: 1px solid var(--clr-border);
+    border-radius: 10px;
+    background-color: var(--clr-white);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.time-input-wrapper button:hover {
+    background-color: #00b17623;
+    color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.action-buttons #btn-calculate {
+    width: 100%;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    fill: var(--clr-white);
+    border: none;
+    border-radius: 10px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    box-shadow: 0 6px 10px rgba(0, 177, 118, 0.2);
+    transition: 0.2s;
+}
+
+.action-buttons #btn-calculate:hover {
+    background-color: #008a5c;
+}
+
+.action-buttons button svg {
+    width: 18px;
+}
+
+.action-buttons #btn-reset {
+    background-color: var(--clr-white);
+    border: 1px solid var(--clr-border);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.action-buttons #btn-reset:hover {
+    opacity: 0.7;
+}
