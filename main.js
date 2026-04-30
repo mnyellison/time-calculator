@@ -24,5 +24,40 @@ const currentTime2 = () => {
     inputEndTime.value = formattedHour;
 }
 
+const calculateTime = () => {
+    const startTime = inputStartTime.value;
+    const endTime = inputEndTime.value;
+
+    if ((startTime !== "") && (endTime !== "")) {
+        const partsStartTime = startTime.split(':');
+        const partsEndTime = endTime.split(':');
+
+        const start = {
+            hour: parseInt(partsStartTime[0]),
+            minutes: parseInt(partsStartTime[1])
+        };
+
+        const end = {
+            hour: parseInt(partsEndTime[0]),
+            minutes: parseInt(partsEndTime[1])
+        };
+
+        const startTotalMinutes = start.hour * 60 + start.minutes;
+        const endTotalMinutes = end.hour * 60 + end.minutes;
+
+        const totalMinutes = endTotalMinutes - startTotalMinutes;
+
+        const hours = Math.floor(totalMinutes / 60);
+        const minutes = totalMinutes % 60;
+
+        const duration = `${hours}h e ${minutes}min`;
+        
+        console.log(duration);
+    } else {
+        alert("Por favor, preencha todos os campos e tente novamente.");
+    }
+}
+
 btnStartTime.addEventListener('click', currentTime1);
 btnEndTime.addEventListener('click', currentTime2);
+btnCalculate.addEventListener('click', calculateTime);
