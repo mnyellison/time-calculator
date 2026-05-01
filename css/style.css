@@ -101,9 +101,10 @@ form {
 }
 
 .time-input-wrapper input {
+    font-family: "Geist", sans-serif;
     padding: 10px 14px;
     width: 100%;
-    font-size: var(--fs-md);
+    font-size: var(--fs-sm);
     border: 1px solid var(--clr-border);
     border-radius: 10px;
 }
@@ -245,4 +246,18 @@ form {
     color: var(--clr-white);
     font-size: var(--fs-md);
     font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 24px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .hero-subtitle {
+        font-size: var(--fs-sm);
+    }
 }
